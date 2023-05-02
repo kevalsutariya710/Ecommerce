@@ -1,1 +1,1 @@
-# ecommerce-shop-starter
+# Ecommerce WebApp

@@ -5,10 +5,12 @@ import { FiTrash2 } from 'react-icons/io';
 
 import CartItem from './CartItem'
 import { SidebarContext } from '../contexts/SidebarContext'
+import { CartContext } from '../contexts/CartContext';
 
 const Sidebar = () => {
 
   const { isOpen, handleClose } = useContext(SidebarContext)
+  const { cart } = useContext(CartContext);
   return (
     <div
       className={`
@@ -19,6 +21,11 @@ const Sidebar = () => {
           Shopping bag (0)</div>
         <div className='cursor-pointer w-8 h-8 flex justify-center items-center'>
           <IoMdArrowBack className='text-2xl ' onClick={handleClose} /></div>
+      </div>
+      <div>
+        {
+          cart.map(item => <CartItem item={item} key={item.id} />)
+        }
       </div>
     </div>
 

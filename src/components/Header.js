@@ -8,13 +8,13 @@ const Header = () => {
 
   return (
 
-    <div>
+    <header className='bg-pink-200'>
       <div>Header</div>
     
       <div onClick={() => setIsOpen(!isOpen)}>
         <BsBag className='text-2xl cursor-pointer hover:text-red-500 ' />
       </div>
-    </div>
+    </header>
   )
 };
 
