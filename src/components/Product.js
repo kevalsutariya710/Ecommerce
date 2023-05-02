@@ -49,7 +49,7 @@ const Product = ({ product }) => {
 
       <div>
         <Link to={`/product/${id}`}>
-          <h2 className='hover:text-red-300 transition duration-500 font-semibold mb-1'>{title}</h2>
+          <h2 className='hover:text-red-500 transition duration-500 font-semibold mb-1'>{title}</h2>
         </Link>
         <div className='font-light'>$ {price}</div>
       </div>
