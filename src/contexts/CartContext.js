@@ -6,8 +6,28 @@ const CartProvider = ({ children }) => {
 
   const [cart, setCart] = useState([]);
   const [itemAmount, setItemAmount] = useState(0);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const total = cart.reduce((accumulator, currItem) => {
+      return accumulator + currItem.price * currItem.amount;
+    }, 0);
+    setTotal(total);
+  }, [cart]);
+
+
+  useEffect(() => {
+    if (cart) {
+      const amount = cart.reduce((accumulator, currItem) => {
+        return accumulator + currItem.amount;
+      }, 0);
+      setItemAmount(amount)
+    }
+  }, [cart]);
+
 
   const addToCart = (product, id) => {
+
     const newItem = { ...product, amount: 1 }
 
     // check the item is already in cart 
@@ -79,7 +99,8 @@ const CartProvider = ({ children }) => {
     addToCart,
     AmountIncr,
     AmountDecr,
-    itemAmount
+    itemAmount,
+    total
 
   }}>{children}</CartContext.Provider>;
 

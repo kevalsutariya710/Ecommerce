@@ -18,6 +18,7 @@ const CartItem = ({ item }) => {
         </Link>
 
         <div className='w-full flex flex-col'>
+          
           {/* title & remove icon */}
           <div className='flex justify-between mb-2'>
 
