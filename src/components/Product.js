@@ -10,6 +10,15 @@ const Product = ({ product }) => {
   const { addToCart } = useContext(CartContext)
   const { id, title, description, category, image, price } = product;
 
+
+  if (!product) {
+    return (
+      <section className='h-screen flex justify-center items-center'>
+        <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-violet-400"></div>
+      </section>
+    )
+  }
+
   return (
     <div>
       <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">

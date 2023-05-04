@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
 import { BsPersonFill } from 'react-icons/bs'
+import { SlSocialTwitter } from 'react-icons/sl'
 
 const Footer = () => {
   return (
@@ -21,6 +22,9 @@ const Footer = () => {
         </a>
         <a className='hover:text-gray-400' href="https://github.com/kevalsutariya710" target="_blank" rel="noreferrer">
           <FiGithub />
+        </a>
+        <a className='hover:text-blue-600' href="https://twitter.com/KevalSutariya71" target="_blank" rel="noreferrer">
+          <SlSocialTwitter />
         </a>
 
       </div>
