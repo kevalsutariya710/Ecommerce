@@ -13,14 +13,14 @@ const Hero = () => {
             </div>
             New Trend
           </div>
-          <h1 className='text-[50px] lg:text-[60px] leading-[1] font-light mb-3'>SALE STYLISH
+          <h1 className='text-[50px] lg:text-[60px] leading-[1.1] font-light mb-3'>SALE STYLISH
             <br />
-            <span className='font-semibold'> Men's & Women's<br/> <span className='font-normal'>Wear</span>  </span>
+            <span className='font-semibold'> Men's & Women's<br /> <span className='font-normal'>Wear</span>  </span>
           </h1>
         </div>
-        <div className='hidden lg:block '>
+        <div className='hidden lg:block'>
           <Link className='cursor-text' to={'/'}>
-            <img className='h-[600px] -mt-14 ' src={WomanImg} alt="img" />
+            <img className='h-[620px] -mt-20' src={WomanImg} alt="img" />
           </Link>
         </div>
       </div>
