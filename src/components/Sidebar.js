@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 // import { Link } from 'react-router-dom';
 import { IoMdArrowBack } from 'react-icons/io';
-import { FiTrash2, TfiTrash } from 'react-icons/fi';
+import { FiTrash2 } from 'react-icons/fi';
 import CartItem from './CartItem'
 import { SidebarContext } from '../contexts/SidebarContext'
 import { CartContext } from '../contexts/CartContext';
@@ -46,7 +46,7 @@ const Sidebar = () => {
           View Cart
         </Link>
         <Link
-          className='bg-blue-300 flex p-3 justify-center items-center text-primary w-full font-medium'
+          className='bg-red-500 flex p-3 justify-center items-center text-white w-full font-medium'
           to={'/'}
         >Check Out</Link>
       </div>

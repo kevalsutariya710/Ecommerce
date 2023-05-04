@@ -1,6 +1,5 @@
 import React from 'react';
 import { FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
-import { BsPersonFill } from 'react-icons/bs'
 import { SlSocialTwitter } from 'react-icons/sl'
 
 const Footer = () => {

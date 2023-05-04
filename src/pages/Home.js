@@ -10,13 +10,6 @@ const Home = () => {
 
   const { products } = useContext(ProductContext)
 
-  // const filterProduct = products.filter((item) => {
-  //   return (
-  //     item.category === "men's clothing" || item.category === "women's clothing" || item.category === "jewelery"
-  //   );
-  // })
-
-
 
   return (
     <div>

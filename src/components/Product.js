@@ -8,7 +8,7 @@ const Product = ({ product }) => {
   // console.log(product);
 
   const { addToCart } = useContext(CartContext)
-  const { id, title, description, category, image, price } = product;
+  const { id, title, image, price } = product;
 
 
   if (!product) {
@@ -21,7 +21,7 @@ const Product = ({ product }) => {
 
   return (
     <div>
-      <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
+      <div className="border  border-[#aaa8a8] h-[300px] mb-4 relative overflow-hidden group transition border-dotted rounded-2xl shadow-lg  ">
 
         {/* img */}
 
@@ -60,7 +60,7 @@ const Product = ({ product }) => {
         <Link to={`/product/${id}`}>
           <h2 className='hover:text-red-500 transition duration-500 font-semibold mb-1'>{title}</h2>
         </Link>
-        <div className='font-light'>$ {price}</div>
+        <div className='font-light text-red-600'>$ {price}</div>
       </div>
     </div>
   )
