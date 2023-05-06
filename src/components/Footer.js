@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className='bg-black py-7'>
 
-      <div className='container flex space-x-4 justify-center mb-4 text-white text-xl ' >
+      <div className=' flex space-x-4 justify-center mb-4 text-white text-xl ' >
         <a
           className='hover:text-red-400 text-center'
           href="https://www.instagram.com/_keval_710/?igshid=ZDdkNTZiNTM%3D" target="_blank" rel="noreferrer">
