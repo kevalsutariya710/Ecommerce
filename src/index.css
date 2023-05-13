@@ -7,3 +7,17 @@
     @apply font-primary text-primary;
   }
 }
+
+::selection {
+  background-color: rgb(161, 213, 239) !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(197, 209, 222);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(108, 146, 147);
+  border-radius: 50px;
+}

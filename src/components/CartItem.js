@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { IoMdAdd, IoMdClose, IoMdRemove } from 'react-icons/io';
+import { IoMdAdd, IoMdRemove } from 'react-icons/io';
 import { FaTrash } from 'react-icons/fa';
 import { CartContext } from '../contexts/CartContext';
 
