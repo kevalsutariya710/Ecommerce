@@ -1,7 +1,7 @@
 # Ecommerce WebApp
 
-I have Created a E-commerce WebApp using react.js & tailwindcss.
-To get Live Preview Please Click here (http://localhost:3000)
+I have Created a E-commerce WebApp using react.js & tailwindcss. <br/>
+To get Live Preview Please Click here (https://shiny-vacherin-fee278.netlify.app/). <br/>
 To run in your System Follow this steps,
 # Getting Started 
 
