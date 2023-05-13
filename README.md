@@ -1,5 +1,8 @@
 # Ecommerce WebApp
 
+I have Created a E-commerce WebApp using react.js & tailwindcss.
+To get Live Preview Please Click here (http://localhost:3000)
+To run in your System Follow this steps,
 # Getting Started 
 
 ### `npm install`
