@@ -88,7 +88,6 @@ const CartProvider = ({ children }) => {
       deleteFromCart(id);
     }
 
-
   }
 
 
