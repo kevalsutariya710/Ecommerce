@@ -6,6 +6,7 @@ import CartItem from './CartItem'
 import { SidebarContext } from '../contexts/SidebarContext'
 import { CartContext } from '../contexts/CartContext';
 import { Link } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -40,6 +41,7 @@ const Sidebar = () => {
             <FiTrash2 />
           </div>
         </div>
+          <ToastContainer />
         <Link
           className='bg-gray-200 flex p-3 justify-center items-center text-primary w-full font-medium justify-items-end'
           to={'/'}>

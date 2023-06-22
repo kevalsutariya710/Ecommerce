@@ -1,4 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const CartContext = createContext();
 
@@ -26,6 +28,8 @@ const CartProvider = ({ children }) => {
   }, [cart]);
 
 
+
+
   const addToCart = (product, id) => {
 
     const newItem = { ...product, amount: 1 }
@@ -45,10 +49,20 @@ const CartProvider = ({ children }) => {
         }
       });
       setCart(newCart)
+      
     }
     else {
       setCart([...cart, newItem])
     }
+    return toast.success('Item Added', {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "light",
+      }); 
   }
 
   // console.log(cart);
@@ -59,10 +73,28 @@ const CartProvider = ({ children }) => {
       return item.id !== id;
     });
     setCart(newCart);
+    return  toast.success('Item Removed', {
+      position: "top-center",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "light",
+      });
   }
 
   const emptyCart = () => {
     setCart([])
+    return  toast.success('All Item Removed Successfully', {
+      position: "top-center",
+      autoClose: 1000,
+      hideProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      theme: "colored",
+      });
   }
 
   const AmountIncr = (id) => {

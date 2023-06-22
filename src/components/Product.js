@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { BsEyeFill, BsPlus } from 'react-icons/bs';
 import { CartContext } from '../contexts/CartContext';
+import { ToastContainer } from 'react-toastify';
+
 
 
 const Product = ({ product }) => {
+  
   // console.log(product);
 
   const { addToCart } = useContext(CartContext)
@@ -41,6 +44,7 @@ const Product = ({ product }) => {
             <div className='text-red-500 hover:text-white border border-red-500 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-xl text-sm px-2.5 py-1.5 text-center mr-0.5 mb-1 '>
               <BsPlus className='text-3xl ' />
             </div>
+            <ToastContainer/>
           </button>
 
           <Link
